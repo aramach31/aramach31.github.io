@@ -102,7 +102,7 @@ There are a few reports with exit multiples flying around, but I wanted to walk 
 
 ## Cap Table
 
-![Cap Table]({{ site.url }}/atlassian_loom_files/cb-insights-cap-table-history_loom-768x398.png)
+![Cap Table]({{ site.url }}/
 <figure>
   <figcaption style="color: lightgray; font-style: italic;">
     <center>
