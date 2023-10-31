@@ -1,0 +1,39 @@
+.interactive-word {
+    position: relative;
+    cursor: pointer;
+    color: lightblue;
+    padding: 1px 2px;  /* Adjust as needed */
+    text-align: center;
+  }
+  
+  .interactive-word:hover {
+    border-radius: 15px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+  }
+  
+  .interactive-word:hover:after {
+    content: "i";
+    position: absolute;
+    right: -15px;  /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightblue;
+    color: white;
+    border-radius: 50%;
+    width: 15px;  /* Smaller circle */
+    height: 15px;  /* Smaller circle */
+    line-height: 15px;  /* Center "i" vertically */
+    text-align: center;  /* Center "i" horizontally */
+  }
+  
+  .popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }

@@ -8,97 +8,9 @@ categories: jekyll update
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<style>
-.interactive-word {
-  position: relative;
-  cursor: pointer;
-  color: lightblue;
-  padding: 1px 2px;  /* Adjust as needed */
-  text-align: center;
-}
+<link rel="stylesheet" type="text/css" href="/assets/css/interactive-word.css">
 
-.interactive-word:hover {
-  border-radius: 15px;
-  background-color: lightblue;
-  color: white;
-  text-align: center;
-}
-
-.interactive-word:hover:after {
-  content: "i";
-  position: absolute;
-  right: -15px;  /* Adjust as needed */
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: lightblue;
-  color: white;
-  border-radius: 50%;
-  width: 15px;  /* Smaller circle */
-  height: 15px;  /* Smaller circle */
-  line-height: 15px;  /* Center "i" vertically */
-  text-align: center;  /* Center "i" horizontally */
-}
-
-.popup {
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index: 1000;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const interactiveWords = document.querySelectorAll('.interactive-word');
-
-  interactiveWords.forEach((word) => {
-    word.addEventListener('mouseenter', function(event) {
-      // Check if a popup is already open
-      const existingPopup = document.querySelector('.popup');
-      if (existingPopup) {
-        existingPopup.remove();
-      }
-
-      // Create the popup
-      const popup = document.createElement('div');
-      popup.classList.add('popup');
-      
-      // Get explanation from data-explanation attribute
-      const explanation = event.target.getAttribute('data-explanation');
-      popup.textContent = explanation;
-
-      // Initial positioning
-      const rect = event.target.getBoundingClientRect();
-      const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      popup.style.left = (rect.left + scrollLeft) + 'px';
-      popup.style.top = (rect.bottom + scrollTop + 10) + 'px';
-      
-      // Temporarily add popup to the document to measure its dimensions
-      popup.style.visibility = 'hidden';
-      document.body.appendChild(popup);
-      
-      // Check if the popup goes beyond the right edge of the viewport
-      const popupRect = popup.getBoundingClientRect();
-      const viewportWidth = window.innerWidth;
-      if (popupRect.right > viewportWidth) {
-        popup.style.left = (viewportWidth - popupRect.width - 10) + 'px';  // 10px padding
-      }
-
-      // Make the popup visible
-      popup.style.visibility = 'visible';
-
-      // Attach a mouseleave event to the word to remove the popup
-      word.addEventListener('mouseleave', function() {
-        popup.remove();
-      });
-    });
-  });
-});
-</script>
+<script src="/assets/js/interactive-word.js"></script>
 
 Some time ago, I decided to get my Vitamin B12 levels and <span class="interactive-word" data-explanation="Thyroid function tests typically include thyroid hormones such as thyroid-stimulating hormone (TSH, thyrotropin), thyroxine (T4), and triiodothyronine (T3)">Thyroid functions</span> tested on a whim. Thankfully, no red flags were raised in the reports. But it got me thinking. One of the first few examples we encounter in an undergrad Probability and Statistics course has to do with an untrustworthy medical test. Provided some information (which we'll shortly cover), we have to plug values into the formidable-looking Bayes' formula to get an answer that should make us doubt a lot of what we assume as de facto truth.
 
