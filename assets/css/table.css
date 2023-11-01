@@ -1,0 +1,24 @@
+/* Remove all borders from table and cells */
+table, th, td {
+    border: 0 !important;
+    text-align: center !important;
+    padding: 14px !important
+  }
+  
+/* Add horizontal borders to cells */
+td {
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+  
+ /* Style the table header */
+th {
+    background-color: white !important;
+    color: black !important;
+    border-bottom: 2px solid black !important;
+  }
+  
+/* Set background color for all rows to white */
+tr {
+    background-color: white !important;
+  }
