@@ -101,7 +101,9 @@ $$
 P(E \vert F) = \frac{0.36*0.455}{0.513} = 0.320
 $$
 
-Quite high, isn't it? Out of every 3 tests I take, 1 will point me in the wrong direction. High prevalence of Vitamin B12 deficiency in Asia combined with low sensitivity and low specificity of the tests could potentially require further testing. 
+Quite high, isn't it? Out of every 3 tests I take, 1 will point me in the wrong direction. High prevalence of Vitamin B12 deficiency in Asia combined with low sensitivity and low specificity of the tests isn't the best combo. Besides I follow a strictly vegetarian diet (Vitamin B12 is derived from animal origin food). 
+
+There seems to be limited risk (could be due to lack of research) in exceeding normal B12 levels, so supplements shouldn't be a problem.
 
 ### Disclaimers
 
