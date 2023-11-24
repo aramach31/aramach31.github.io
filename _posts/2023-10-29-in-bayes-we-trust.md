@@ -4,13 +4,17 @@ title:  "In Bayes, We Trust"
 date:   2023-10-26 16:20:58 +0530
 categories: jekyll update
 ---
+
+[comment]: <> (To be included)
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+[comment]: <> (To be included)
 <link rel="stylesheet" type="text/css" href="/assets/css/interactive-word.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/table.css">
 
+[comment]: <> (To be included)
 <script src="/assets/js/interactive-word.js"></script>
 
 Some time ago, I decided to get my Vitamin B12 levels and <span class="interactive-word" data-explanation="Thyroid function tests typically include thyroid hormones such as thyroid-stimulating hormone (TSH, thyrotropin), thyroxine (T4), and triiodothyronine (T3)">Thyroid functions</span> tested on a whim. Thankfully, no red flags were raised in the reports. But it got me thinking. One of the first few examples we encounter in an undergrad Probability and Statistics course has to do with an untrustworthy medical test. Provided some information (which we'll shortly cover), we have to plug values into the formidable-looking Bayes' formula to get an answer that should make us doubt a lot of what we assume as de facto truth.

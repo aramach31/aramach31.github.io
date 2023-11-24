@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  width: 100%; /* Full width of the post container */
+  height: 500px; /* Adjust based on your preference */
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.carousel-image img {
+  width: 100%; /* Ensure images scale with the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust as needed */
+}
+
+.carousel-image:first-child {
+  display: block;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel .prev, .carousel .next {
+  /* Initial styles for buttons */
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* More styles as needed */
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+.carousel:hover .prev, .carousel:hover .next {
+  display: block;
+}
