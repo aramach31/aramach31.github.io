@@ -68,6 +68,8 @@ The term "3 nanometer" has no relation to any actual physical feature (such as g
   </tr>
 </table>
 
+According to TSMC, the manufacturer of Apple's chips, their 3nm processors are expected to be up to 35% more power efficient than the previous 5nm chips​​.<sup>[1](https://appleinsider.com/articles/22/12/29/iphone-15-may-be-35-more-power-efficient-with-new-tsmc-3nm-chip))</sup> This increase in power efficiency means that if all other factors remain constant, an iPhone using a 3nm chip could potentially have a 35% longer battery life compared to a model with a 5nm chip.
+
 <table>
   <thead>
     <tr>
