@@ -1,0 +1,26 @@
+.image-container {
+    text-align: center; /* Center the content */
+    margin-bottom: 20px; /* Space below each image container */
+}
+
+.image-container img {
+    display: block; /* Ensure the image is a block-level element */
+    margin: 0 auto; /* Center the image */
+    border-bottom: 1px solid #ccc; /* Line beneath the image */
+    padding-bottom: 10px; /* Space between image and line */
+    max-width: 80%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-source {
+    display: block; /* Ensure the source is a block-level element */
+    text-align: center; /* Center the source text */
+    margin-top: 5px; /* Space between line and source text */
+    font-style: italic;
+    color: #555; /* Color of the source text */
+}
+
+.image-source a {
+    color: #lightblue; /* Example color */
+    text-decoration: none; /* Removes the underline */
+}
